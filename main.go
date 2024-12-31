@@ -4,11 +4,11 @@ import (
 	"github.com/hajimehoshi/ebiten/v2"
 	"log"
 	"math/rand"
+	"time"
 )
 
 func main() {
-	seed := int64(1)
-	//seed := time.Now().UnixNano()
+	seed := time.Now().UnixNano()
 
 	rand.New(rand.NewSource(seed))
 
